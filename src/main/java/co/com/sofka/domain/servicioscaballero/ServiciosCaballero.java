@@ -6,12 +6,22 @@ import co.com.sofka.domain.servicioscaballero.valor.*;
 
 import java.util.Objects;
 
+
 public class ServiciosCaballero extends AggregateEvent<IdServiciosCaballero> {
     protected CorteBarba corteBarba;
+    protected FechaDeServicio fechaDeServicio;
+    protected Barbero barbero;
+    protected CorteCaballero corteCaballero;
+    protected DiseñoBarba diseñoBarba;
 
-    public ServiciosCaballero(IdServiciosCaballero entityId) {
-        super(entityId);
-        appendChange(new ServiciosCaballeroCreado()).apply();
+    public ServiciosCaballero(IdServiciosCaballero idServiciosCaballero, FechaDeServicio fechaDeServicio) {
+        super(idServiciosCaballero);
+        appendChange(new ServiciosCaballeroCreado(fechaDeServicio)).apply();
+    }
+
+    private ServiciosCaballero(IdServiciosCaballero idServiciosCaballero){
+        super(idServiciosCaballero);
+        subscribe(new ServiciosCaballeroChange(this));
     }
 
     public void AgregarBarbero(IdBarbero idBarbero, Nombre nombre, Experiencia experiencia){
@@ -58,4 +68,7 @@ public class ServiciosCaballero extends AggregateEvent<IdServiciosCaballero> {
         appendChange(new BarbaCortada(corteBarba)).apply();
     }
 
+    public CorteBarba CorteBarba() {
+        return corteBarba;
+    }
 }
