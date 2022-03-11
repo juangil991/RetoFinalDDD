@@ -1,10 +1,7 @@
 package co.com.sofka.domain.servicioscaballero;
 
 import co.com.sofka.domain.generic.AggregateEvent;
-import co.com.sofka.domain.servicioscaballero.event.BarberoAgregado;
-import co.com.sofka.domain.servicioscaballero.event.ExperienciaBarberoActualizada;
-import co.com.sofka.domain.servicioscaballero.event.NombreBarberoActualizado;
-import co.com.sofka.domain.servicioscaballero.event.ServiciosCaballeroCreado;
+import co.com.sofka.domain.servicioscaballero.event.*;
 import co.com.sofka.domain.servicioscaballero.valor.*;
 
 import java.util.Objects;
@@ -35,6 +32,30 @@ public class ServiciosCaballero extends AggregateEvent<IdServiciosCaballero> {
     }
     public void AgregarCorteCaballero(IdCorteCaballero idCorteCaballero, Complejidad complejidad, EstiloCorte estiloCorte){
         Objects.requireNonNull(idCorteCaballero);
+        Objects.requireNonNull(complejidad);
+        Objects.requireNonNull(estiloCorte);
+        appendChange(new CorteCaballeroAgregado(idCorteCaballero,complejidad,estiloCorte)).apply();
+    }
+    public void ActualizarEstiloCorteCaballero(EstiloCorte estiloCorte){
+        Objects.requireNonNull(estiloCorte);
+        appendChange(new EstiloCorteCaballeroActualizado(estiloCorte)).apply();
+    }
+    public void ActualizarComplejidadCorteCaballero(Complejidad complejidad){
+        Objects.requireNonNull(complejidad);
+        appendChange(new ComplejidadCorteCaballeroActualizada(complejidad)).apply();
+    }
+    public void AgregarDiseñoBarba(IdDiseñoBarba idDiseñoBarba,TipoDeDiseño tipoDeDiseño){
+        Objects.requireNonNull(idDiseñoBarba);
+        Objects.requireNonNull(tipoDeDiseño);
+        appendChange(new DiseñoBarbaAgregado(idDiseñoBarba,tipoDeDiseño)).apply();
+    }
+    private void ActualizarTipoDeDiseñoBarba(TipoDeDiseño tipoDeDiseño){
+        Objects.requireNonNull(tipoDeDiseño);
+        appendChange(new TipoDeDiseñoBarbaActualizado(tipoDeDiseño)).apply();
+    }
+    public void CortarBarba(CorteBarba corteBarba){
+        Objects.requireNonNull(corteBarba);
+        appendChange(new BarbaCortada(corteBarba)).apply();
     }
 
 }
