@@ -1,9 +1,11 @@
 package co.com.sofka.domain.servicioscaballero;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.domain.servicioscaballero.event.*;
 import co.com.sofka.domain.servicioscaballero.valor.*;
 
+import java.util.List;
 import java.util.Objects;
 
 
@@ -22,6 +24,12 @@ public class ServiciosCaballero extends AggregateEvent<IdServiciosCaballero> {
     private ServiciosCaballero(IdServiciosCaballero idServiciosCaballero){
         super(idServiciosCaballero);
         subscribe(new ServiciosCaballeroChange(this));
+    }
+
+    public static ServiciosCaballero from(IdServiciosCaballero idServiciosCaballero, List<DomainEvent> events){
+        var serviciosCaballero=new ServiciosCaballero(idServiciosCaballero);
+        events.forEach(serviciosCaballero::applyEvent);
+        return serviciosCaballero;
     }
 
     public void AgregarBarbero(IdBarbero idBarbero, Nombre nombre, Experiencia experiencia){
