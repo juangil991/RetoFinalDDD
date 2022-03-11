@@ -2,7 +2,6 @@ package co.com.sofka.domain.servicioscaballero.command;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.domain.servicioscaballero.valor.Complejidad;
-import co.com.sofka.domain.servicioscaballero.valor.IdBarbero;
 import co.com.sofka.domain.servicioscaballero.valor.IdCorteCaballero;
 import co.com.sofka.domain.servicioscaballero.valor.IdServiciosCaballero;
 
