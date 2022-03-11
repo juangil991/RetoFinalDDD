@@ -58,9 +58,9 @@ public class ServiciosCaballero extends AggregateEvent<IdServiciosCaballero> {
         Objects.requireNonNull(estiloCorte);
         appendChange(new EstiloCorteCaballeroActualizado(estiloCorte)).apply();
     }
-    public void ActualizarComplejidadCorteCaballero(Complejidad complejidad){
+    public void ActualizarComplejidadCorteCaballero(IdCorteCaballero idCorteCaballero, Complejidad complejidad){
         Objects.requireNonNull(complejidad);
-        appendChange(new ComplejidadCorteCaballeroActualizada(complejidad)).apply();
+        appendChange(new ComplejidadCorteCaballeroActualizada(idCorteCaballero,complejidad)).apply();
     }
     public void AgregarDiseñoBarba(IdDiseñoBarba idDiseñoBarba,TipoDeDiseño tipoDeDiseño){
         Objects.requireNonNull(idDiseñoBarba);
