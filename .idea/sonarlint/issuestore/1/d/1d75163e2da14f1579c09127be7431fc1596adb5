@@ -1,0 +1,12 @@
+
+r	java:S116"XRename this field "tipoDeDiseÃ±o" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë—ã²úÿÿÿÿ
+M
+java:S2160"+Override the "equals" method in this class.(Àıä·üÿÿÿÿ8·§êÕ÷/
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·î´u8º§êÕ÷/
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õïûÜ8º§êÕ÷/
+k	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔéÃÿÿÿÿÿ
+k	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔéÃÿÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·î´u
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Àıä·üÿÿÿÿ
