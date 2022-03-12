@@ -67,7 +67,7 @@ public class ServiciosCaballero extends AggregateEvent<IdServiciosCaballero> {
         Objects.requireNonNull(tipoDeDiseño);
         appendChange(new DiseñoBarbaAgregado(idDiseñoBarba,tipoDeDiseño)).apply();
     }
-    private void ActualizarTipoDeDiseñoBarba(TipoDeDiseño tipoDeDiseño){
+    public void ActualizarTipoDeDiseñoBarba(TipoDeDiseño tipoDeDiseño){
         Objects.requireNonNull(tipoDeDiseño);
         appendChange(new TipoDeDiseñoBarbaActualizado(tipoDeDiseño)).apply();
     }

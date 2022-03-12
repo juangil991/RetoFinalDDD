@@ -12,7 +12,8 @@ public class ActualizarEstiloCorteCaballeroUseCase
     @Override
     public void executeUseCase(RequestCommand<ActualizarEstiloCorteCaballero> input) {
         var command = input.getCommand();
-        var serviciosCaballero= ServiciosCaballero.from(command.getIdServiciosCaballero(),retrieveEvents());
+        var serviciosCaballero= ServiciosCaballero
+                .from(command.getIdServiciosCaballero(),retrieveEvents());
         serviciosCaballero.ActualizarEstiloCorteCaballero(command.getEstiloCorte());
         emit().onResponse(new ResponseEvents(serviciosCaballero.getUncommittedChanges()));
     }

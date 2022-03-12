@@ -1,16 +1,8 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-
-Osrc/main/java/co/com/sofka/domain/servicioscaballero/event/BarberoAgregado.java,1\0\1015b9563de4a0dea0789e2e114727c0f1593ef5
 Ñ
 Tsrc/main/java/co/com/sofka/domain/servicioscaballero/event/Dise√±oBarbaAgregado.java,b\1\b1fc6ed85ee8de19962d0a8c3f5281572ac50692
-ç
-]src/main/java/co/com/sofka/domain/servicioscaballero/event/ExperienciaBarberoActualizada.java,0\3\039bf903130c8a2d3bfe1a13d5893c44d6572e8a
-à
-Xsrc/main/java/co/com/sofka/domain/servicioscaballero/event/NombreBarberoActualizado.java,2\6\265997a4f10421e3efb49b910922b69ee9baf345
-ç
-]src/main/java/co/com/sofka/domain/servicioscaballero/event/TipoDeDise√±oBarbaActualizado.java,b\f\bf1576bdcb5e24263d05b8f58d3e406e9f8b3618
 é
 ^src/main/java/co/com/sofka/domain/servicioscaballero/command/ActualizarExperienciaBarbero.java,4\c\4c58f31b506931b79453db9af1f4e71831ca147b
 â
@@ -21,8 +13,6 @@ Ysrc/main/java/co/com/sofka/domain/servicioscaballero/command/ActualizarNombreBa
 Psrc/main/java/co/com/sofka/domain/servicioscaballero/command/AgregarBarbero.java,c\1\c1c823a4998eb3ece5b35be01efbe1a62f529b0f
 Ö
 Usrc/main/java/co/com/sofka/domain/servicioscaballero/command/AgregarDise√±oBarba.java,3\9\398563d86eb704758a825a551031b0a9e8edc5fd
-}
-Msrc/main/java/co/com/sofka/domain/servicioscaballero/command/CortarBarba.java,3\b\3be4d4e8a2cc74f025046f65eda30272cdb3d112
 y
 Isrc/main/java/co/com/sofka/domain/servicioscaballero/valor/IdBarbero.java,a\7\a7814f6a3da37fa3745c0171264feafbb135a660
 Ä
@@ -37,8 +27,6 @@ Fsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/Nombre.java,7\7\775
 Msrc/main/java/co/com/sofka/domain/servicioscaballero/valor/TipoDeDise√±o.java,4\2\42687060d18834621db779e9fac16c7cf06fb303
 à
 Xsrc/main/java/co/com/sofka/domain/servicioscaballero/command/CrearServicioCaballero.java,d\0\d0ff190b86a95d5b3867608e355add8c13809522
-|
-Lsrc/main/java/co/com/sofka/domain/servicioscaballero/event/BarbaCortada.java,0\8\088ee3b777c9b426f5fcd3b744b5a0bdc4179b0f
 q
 Asrc/main/java/co/com/sofka/domain/servicioscaballero/Barbero.java,5\e\5e21e1240fd40e150f3b1d361458edc3b8e2cea2
 z
@@ -59,7 +47,5 @@ Tsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/IdServiciosCaballero
 Ksrc/main/java/co/com/sofka/domain/servicioscaballero/valor/Complejidad.java,8\a\8a316b95648a2bd32c6473cdbb35d2a7dd9d9101
 {
 Ksrc/main/java/co/com/sofka/domain/servicioscaballero/valor/EstiloCorte.java,c\f\cfb4d7383ca2ee9c475bb59fd42c45186fb3514e
-|
-Lsrc/main/java/co/com/sofka/domain/servicioscaballero/ServiciosCaballero.java,5\a\5a0b8ecfed8c2176c0c50a402c7a96789054bb37
 á
 Wsrc/main/java/co/com/sofka/domain/servicioscaballero/command/AgregarCorteCaballero.java,e\b\ebefe38cd8e5a59e6a80b5a83dfc8b17a9f76bd7
