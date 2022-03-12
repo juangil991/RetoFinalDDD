@@ -15,7 +15,7 @@ public class ActualizarComplejidadCorteCaballeroUseCase
         var command= input.getCommand();
         var servicioscaballero= ServiciosCaballero.from(command
                 .getIdServiciosCaballero(),retrieveEvents());
-        servicioscaballero.ActualizarComplejidadCorteCaballero(command.getIdCorteCaballero(),command.getComplejidad());
+        servicioscaballero.ActualizarComplejidadCorteCaballero(command.getComplejidad());
         emit().onResponse(new ResponseEvents(servicioscaballero.getUncommittedChanges()));
     }
 
