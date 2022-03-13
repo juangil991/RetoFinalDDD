@@ -21,8 +21,6 @@ Psrc/main/java/co/com/sofka/domain/servicioscaballero/valor/IdCorteCaballero.jav
 Nsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/IdDise√±oBarba.java,5\5\558bb74849e8e47f966fb1f13d048f9fa806bb02
 {
 Ksrc/main/java/co/com/sofka/domain/servicioscaballero/valor/Experiencia.java,1\4\1446a0dd9e5bbb5c76c4f215a7bf7ce3e8dc3dc1
-v
-Fsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/Nombre.java,7\7\775eb83cde77c5c8911fa44c40932a06a43b2fe7
 }
 Msrc/main/java/co/com/sofka/domain/servicioscaballero/valor/TipoDeDise√±o.java,4\2\42687060d18834621db779e9fac16c7cf06fb303
 à
@@ -37,14 +35,10 @@ v
 Fsrc/main/java/co/com/sofka/domain/servicioscaballero/Dise√±oBarba.java,1\d\1d75163e2da14f1579c09127be7431fc1596adb5
 x
 Hsrc/main/java/co/com/sofka/domain/servicioscaballero/CorteCaballero.java,9\2\929582d4f498a5b32c02b62a71654785573143ad
-
-Osrc/main/java/co/com/sofka/domain/servicioscaballero/valor/FechaDeServicio.java,4\9\4901ace737f3930d4e05dfa160d807a37c45619c
 à
 Xsrc/main/java/co/com/sofka/domain/servicioscaballero/event/ServiciosCaballeroCreado.java,7\8\78919ece3b708f3eabccaba9a5fd114ac89d77d4
 Ñ
 Tsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/IdServiciosCaballero.java,d\6\d69d41a60674d5d244e0f28a92dcd476b7f2be97
-{
-Ksrc/main/java/co/com/sofka/domain/servicioscaballero/valor/Complejidad.java,8\a\8a316b95648a2bd32c6473cdbb35d2a7dd9d9101
 {
 Ksrc/main/java/co/com/sofka/domain/servicioscaballero/valor/EstiloCorte.java,c\f\cfb4d7383ca2ee9c475bb59fd42c45186fb3514e
 á
