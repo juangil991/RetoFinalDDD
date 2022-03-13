@@ -17,7 +17,6 @@ public class Manicurista extends Entity<IdManicurista> {
 
     public Manicurista(IdManicurista idManicurista, DiseñoUñas diseñoUñas, Nombre nombre) {
         super(idManicurista);
-        this.idManicurista = idManicurista;
         this.diseñoUñas = diseñoUñas;
         this.nombre = nombre;
     }
@@ -34,9 +33,6 @@ public class Manicurista extends Entity<IdManicurista> {
         this.esmaltes.add(Objects.requireNonNull(esmalte));
     }
 
-    public IdManicurista IdManicurista() {
-        return idManicurista;
-    }
 
     public DiseñoUñas DiseñoUñas() {
         return diseñoUñas;

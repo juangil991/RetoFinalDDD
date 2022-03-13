@@ -12,14 +12,14 @@ public class Estilista extends Entity<IdEstilista> {
     private Alisado alisado;
     private Depilacion depilacion;
 
-    public Estilista(IdEstilista entityId, IdEstilista idEstilista, Nombre nombre) {
-        super(entityId);
-        this.idEstilista = idEstilista;
+    public Estilista(IdEstilista idEstilista, Nombre nombre) {
+        super(idEstilista);
         this.nombre = nombre;
     }
     public void AgregarAlisado(Alisado alisado){
         this.alisado= Objects.requireNonNull(alisado);
     }
+
     public void AgregarCepillado(Cepillado cepillado){
         this.cepillado=Objects.requireNonNull(cepillado);
     }
@@ -30,10 +30,6 @@ public class Estilista extends Entity<IdEstilista> {
         this.nombre=Objects.requireNonNull(nombre);
     }
 
-
-    public IdEstilista IdEstilista() {
-        return idEstilista;
-    }
 
     public Nombre Nombre() {
         return nombre;

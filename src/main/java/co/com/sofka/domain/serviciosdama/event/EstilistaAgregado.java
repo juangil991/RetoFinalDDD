@@ -9,7 +9,7 @@ public class EstilistaAgregado extends DomainEvent {
     private final Nombre nombre;
 
     public EstilistaAgregado( IdEstilista idEstilista, Nombre nombre) {
-        super("co.com.sofka.domain.serviciosdama.manicuristaagregada");
+        super("co.com.sofka.domain.serviciosdama.estilistaagregado");
         this.idEstilista = idEstilista;
         this.nombre = nombre;
     }

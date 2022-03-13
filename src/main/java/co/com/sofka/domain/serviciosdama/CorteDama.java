@@ -14,7 +14,6 @@ public class CorteDama extends Entity<IdCortesDama> {
 
     public CorteDama(IdCortesDama idCortesDama, TipoDeCabello tipoDeCabello, TipoDeCorte tipoDeCorte) {
         super(idCortesDama);
-        this.idCortesDama = idCortesDama;
         this.tipoDeCabello = tipoDeCabello;
         this.tipoDeCorte = tipoDeCorte;
     }
@@ -25,10 +24,6 @@ public class CorteDama extends Entity<IdCortesDama> {
 
     public void ActualizarTipoDeCabello(TipoDeCabello tipoDeCabello){
         this.tipoDeCabello=Objects.requireNonNull(tipoDeCabello);
-    }
-
-    public IdCortesDama IdCortesDama() {
-        return idCortesDama;
     }
 
     public TipoDeCabello TipoDeCabello() {

@@ -1,10 +1,11 @@
 package co.com.sofka.domain.serviciosdama.command;
 
+import co.com.sofka.domain.generic.Command;
 import co.com.sofka.domain.serviciosdama.valor.IdEstilista;
 import co.com.sofka.domain.serviciosdama.valor.IdServicioDama;
 import co.com.sofka.domain.serviciosdama.valor.Nombre;
 
-public class AgregarEstilista {
+public class AgregarEstilista extends Command {
     private final IdServicioDama idServicioDama;
     private final IdEstilista idEstilista;
     private final Nombre nombre;
