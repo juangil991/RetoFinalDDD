@@ -53,8 +53,6 @@ Usrc/main/java/co/com/sofka/domain/serviciosdama/event/CepilladoEstilistaAgregad
 Usrc/main/java/co/com/sofka/domain/serviciosdama/event/NombreEstilistaActualizado.java,3\0\301240705da66c43711b71b5df76b83c7e8a8896
 å
 \src/main/java/co/com/sofka/domain/serviciosdama/event/TipoDeCabelloCorteDamaActualizado.java,8\5\85d6879c5e51e8a482212172c3e32dd5c54b5350
-ç
-]src/main/java/co/com/sofka/domain/serviciosdama/event/Dise√±oU√±asManicuristaActualizado.java,f\7\f74cc9c4c56f408c030ec22364da465adbf912f0
 ê
 `src/main/java/co/com/sofka/domain/servicioscaballero/command/ActualizarEstiloCorteCaballero.java,1\e\1ec275da786462884a5d4b1f9ebae022de1a500f
 Ü

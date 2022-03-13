@@ -4,7 +4,9 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.domain.serviciosdama.command.ActualizarDiseñoUñasManicurista;
 import co.com.sofka.domain.serviciosdama.command.AgregarManicurista;
+import co.com.sofka.domain.serviciosdama.event.DiseñoUñasManicuristaActualizado;
 import co.com.sofka.domain.serviciosdama.event.ManicuristaAgregada;
 import co.com.sofka.domain.serviciosdama.event.ServiciosDamaCreado;
 import co.com.sofka.domain.serviciosdama.valor.*;
@@ -20,20 +22,19 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-class AgregarManicuristaUseCaseTest {
+class ActualizarDiseñoUñasManicuristaUseCaseTest {
+
 
     @Mock
     public DomainEventRepository repository;
 
-
     @Test
-    void AgregarManicuristaTest() {
+    void ActualizarDiseñoUñasManicuristaTest(){
         IdServicioDama idServicioDama = IdServicioDama.of("xxxx");
         IdManicurista idManicurista = IdManicurista.of("xxx");
-        Nombre nombre = new Nombre("luis", "yepes");
         DiseñoUñas diseñoUñas= new DiseñoUñas("comun","acrilicas");
-        var command=new AgregarManicurista(idServicioDama,idManicurista,nombre,diseñoUñas);
-        var usecase= new AgregarManicuristaUseCase();
+        var command=new ActualizarDiseñoUñasManicurista(idServicioDama,idManicurista,diseñoUñas);
+        var usecase= new ActualizarDiseñoUñasManicuristaUseCase();
         Mockito.when(repository.getEventsBy("xxxx")).thenReturn(history());
         usecase.addRepository(repository);
         //act
@@ -43,18 +44,20 @@ class AgregarManicuristaUseCaseTest {
                 .orElseThrow()
                 .getDomainEvents();
         //assert
-        var event=(ManicuristaAgregada)events.get(0);
-        Assertions.assertEquals("co.com.sofka.domain.serviciosdama.manicuristaagregada",event.type);
+        var event=(DiseñoUñasManicuristaActualizado)events.get(0);
+        Assertions.assertEquals("co.com.sofka.domain.serviciosdama.diseñouñasmanicuristaactualizado",event.type);
         Assertions.assertEquals("xxx",event.getIdManicurista().value());
-        Assertions.assertEquals("luis",event.getNombre().value().Nombre());
-        Assertions.assertEquals("yepes",event.getNombre().value().apellido());
         Assertions.assertEquals("comun",event.getDiseñoUñas().value().DescripcionDiseño());
         Assertions.assertEquals("acrilicas",event.getDiseñoUñas().value().TipoDeUñas());
     }
     private List<DomainEvent> history() {
         FechaDeServicio fechaDeServicio= new FechaDeServicio();
+        IdManicurista idManicurista = IdManicurista.of("xxx");
+        Nombre nombre = new Nombre("luis", "yepes");
+        DiseñoUñas diseñoUñas= new DiseñoUñas("personalizadas","largas");
         return List.of(
-                new ServiciosDamaCreado(fechaDeServicio)
+                new ServiciosDamaCreado(fechaDeServicio),
+                new ManicuristaAgregada(idManicurista,nombre,diseñoUñas)
         );
     }
 
