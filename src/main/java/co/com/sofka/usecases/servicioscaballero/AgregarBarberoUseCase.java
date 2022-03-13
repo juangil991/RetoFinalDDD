@@ -1,11 +1,9 @@
-package co.com.sofka.usecases;
+package co.com.sofka.usecases.servicioscaballero;
 
 import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
-import co.com.sofka.domain.generic.Command;
 import co.com.sofka.domain.servicioscaballero.ServiciosCaballero;
-import co.com.sofka.domain.servicioscaballero.command.ActualizarTipoDeDiseñoBarba;
 import co.com.sofka.domain.servicioscaballero.command.AgregarBarbero;
 
 public class AgregarBarberoUseCase extends UseCase<RequestCommand<AgregarBarbero>, ResponseEvents> {

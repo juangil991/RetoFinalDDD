@@ -4,11 +4,9 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domain.servicioscaballero.command.ActualizarNombreBarbero;
 import co.com.sofka.domain.servicioscaballero.command.ActualizarTipoDeDiseñoBarba;
 import co.com.sofka.domain.servicioscaballero.event.*;
 import co.com.sofka.domain.servicioscaballero.valor.*;
-import co.com.sofka.usecases.ActualizarTipoDeDiseñoBarbaUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,8 +16,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 class ActualizarTipoDeDiseñoBarbaUseCaseTest {

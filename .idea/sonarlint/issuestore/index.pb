@@ -25,12 +25,8 @@ Ksrc/main/java/co/com/sofka/domain/servicioscaballero/valor/Experiencia.java,1\
 Msrc/main/java/co/com/sofka/domain/servicioscaballero/valor/TipoDeDise√±o.java,4\2\42687060d18834621db779e9fac16c7cf06fb303
 à
 Xsrc/main/java/co/com/sofka/domain/servicioscaballero/command/CrearServicioCaballero.java,d\0\d0ff190b86a95d5b3867608e355add8c13809522
-q
-Asrc/main/java/co/com/sofka/domain/servicioscaballero/Barbero.java,5\e\5e21e1240fd40e150f3b1d361458edc3b8e2cea2
 z
 Jsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/CorteBarba.java,9\b\9b5a031a6933730da48e883f4ca7d78b64cec786
-Ç
-Rsrc/main/java/co/com/sofka/domain/servicioscaballero/ServiciosCaballeroChange.java,5\7\575c950b2fea67a84e2bbb37eaaddaea5175a55d
 v
 Fsrc/main/java/co/com/sofka/domain/servicioscaballero/Dise√±oBarba.java,1\d\1d75163e2da14f1579c09127be7431fc1596adb5
 x

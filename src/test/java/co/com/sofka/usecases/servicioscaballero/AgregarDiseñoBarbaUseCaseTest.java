@@ -11,7 +11,6 @@ import co.com.sofka.domain.servicioscaballero.valor.FechaDeServicio;
 import co.com.sofka.domain.servicioscaballero.valor.IdDiseñoBarba;
 import co.com.sofka.domain.servicioscaballero.valor.IdServiciosCaballero;
 import co.com.sofka.domain.servicioscaballero.valor.TipoDeDiseño;
-import co.com.sofka.usecases.AgregarDiseñoBarbaUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,7 +21,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 class AgregarDiseñoBarbaUseCaseTest {
 

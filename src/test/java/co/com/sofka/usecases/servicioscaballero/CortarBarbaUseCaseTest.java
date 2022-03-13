@@ -8,7 +8,6 @@ import co.com.sofka.domain.servicioscaballero.command.CortarBarba;
 import co.com.sofka.domain.servicioscaballero.event.BarbaCortada;
 import co.com.sofka.domain.servicioscaballero.event.ServiciosCaballeroCreado;
 import co.com.sofka.domain.servicioscaballero.valor.*;
-import co.com.sofka.usecases.CortarBarbaUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,8 +17,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 class CortarBarbaUseCaseTest {

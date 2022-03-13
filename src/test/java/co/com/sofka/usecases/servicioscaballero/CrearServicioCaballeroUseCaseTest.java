@@ -2,19 +2,14 @@ package co.com.sofka.usecases.servicioscaballero;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
-import co.com.sofka.domain.servicioscaballero.ServiciosCaballero;
 import co.com.sofka.domain.servicioscaballero.command.CrearServicioCaballero;
 import co.com.sofka.domain.servicioscaballero.event.ServiciosCaballeroCreado;
 import co.com.sofka.domain.servicioscaballero.valor.FechaDeServicio;
 import co.com.sofka.domain.servicioscaballero.valor.IdServiciosCaballero;
-import co.com.sofka.usecases.CrearServicioCaballeroUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.Date;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CrearServicioCaballeroUseCaseTest {
 

@@ -2,21 +2,23 @@ package co.com.sofka.domain.serviciosdama.valor;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.time.LocalDate;
 import java.util.Date;
+import java.util.Locale;
 
-public class FechaDeServicio implements ValueObject<Date> {
-    private final Date value;
+public class FechaDeServicio implements ValueObject<LocalDate> {
+    private final LocalDate value;
 
-    public FechaDeServicio(Date value) {
+    public FechaDeServicio(LocalDate value) {
         this.value = value;
     }
 
     public FechaDeServicio() {
-        this(new Date());
+        this(LocalDate.now());
     }
 
     @Override
-    public Date value() {
+    public LocalDate value() {
         return value;
     }
 

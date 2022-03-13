@@ -1,11 +1,13 @@
 package co.com.sofka.domain.serviciosdama;
 
 import co.com.sofka.domain.generic.AggregateEvent;
-import co.com.sofka.domain.serviciosdama.command.AgregarAlisadoEstilista;
+import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.domain.servicioscaballero.ServiciosCaballero;
+import co.com.sofka.domain.servicioscaballero.valor.IdServiciosCaballero;
 import co.com.sofka.domain.serviciosdama.event.*;
 import co.com.sofka.domain.serviciosdama.valor.*;
 
-import java.time.LocalDate;
+import java.util.List;
 
 public class ServiciosDama extends AggregateEvent<IdServicioDama> {
     protected FechaDeServicio fechaDeServicio;
@@ -16,6 +18,16 @@ public class ServiciosDama extends AggregateEvent<IdServicioDama> {
     public ServiciosDama(IdServicioDama idServicioDama, FechaDeServicio fechaDeServicio) {
         super(idServicioDama);
         appendChange(new ServiciosDamaCreado(fechaDeServicio)).apply();
+    }
+    private ServiciosDama(IdServicioDama idServicioDama){
+        super(idServicioDama);
+        subscribe(new ServiciosDamaChange(this));
+    }
+
+    public static ServiciosDama from(IdServicioDama idServicioDama,List<DomainEvent> events){
+        var serviciosDama=new ServiciosDama(idServicioDama);
+        events.forEach(serviciosDama::applyEvent);
+        return serviciosDama;
     }
 
     public void AgregarManicurista(IdManicurista idManicurista, Nombre nombre, DiseñoUñas diseñoUñas){

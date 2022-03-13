@@ -1,19 +1,20 @@
-package co.com.sofka.usecases;
+package co.com.sofka.usecases.servicioscaballero;
 
 import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.domain.servicioscaballero.ServiciosCaballero;
-import co.com.sofka.domain.servicioscaballero.command.AgregarCorteCaballero;
+import co.com.sofka.domain.servicioscaballero.command.ActualizarTipoDeDiseñoBarba;
 
-public class AgregarCorteCaballeroUseCase extends UseCase<RequestCommand<AgregarCorteCaballero>, ResponseEvents> {
+public class ActualizarTipoDeDiseñoBarbaUseCase
+        extends UseCase<RequestCommand<ActualizarTipoDeDiseñoBarba>, ResponseEvents> {
 
     @Override
-    public void executeUseCase(RequestCommand<AgregarCorteCaballero> input) {
+    public void executeUseCase(RequestCommand<ActualizarTipoDeDiseñoBarba> input) {
         var command = input.getCommand();
         var serviciosCaballero= ServiciosCaballero
                 .from(command.getIdServiciosCaballero(),retrieveEvents());
-        serviciosCaballero.AgregarCorteCaballero(command.getIdCorteCaballero(),command.getComplejidad(),command.getEstiloCorte());
+        serviciosCaballero.ActualizarTipoDeDiseñoBarba(command.getTipoDeDiseño());
         emit().onResponse(new ResponseEvents(serviciosCaballero.getUncommittedChanges()));
     }
 }
