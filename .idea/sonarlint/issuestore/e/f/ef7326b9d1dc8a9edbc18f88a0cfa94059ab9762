@@ -1,0 +1,7 @@
+
+q	java:S116"WRename this field "diseÃ±oUÃ±as" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«é†‘üÿÿÿÿ
+I
+java:S1948".Make "diseÃ±oUÃ±as" transient or serializable.(«é†‘üÿÿÿÿ
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Öû8ÛÀ˜ˆø/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬‹Ö½ûÿÿÿÿ8Øü—ˆø/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‰æ‘Ç

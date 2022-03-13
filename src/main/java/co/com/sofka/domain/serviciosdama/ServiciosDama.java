@@ -74,5 +74,9 @@ public class ServiciosDama extends AggregateEvent<IdServicioDama> {
         appendChange(new EstilistaAgregado(idEstilista,nombre)).apply();
     }
 
+    public void AgregarCorteDama(IdCortesDama idCortesDama, TipoDeCorte tipoDeCorte, TipoDeCabello tipoDeCabello){
+        appendChange(new CorteDamaAgregado(idCortesDama,tipoDeCorte,tipoDeCabello)).apply();
+    }
+
 
 }
