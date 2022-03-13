@@ -6,6 +6,7 @@ import co.com.sofka.domain.serviciosdama.valor.Esmalte;
 import co.com.sofka.domain.serviciosdama.valor.IdManicurista;
 import co.com.sofka.domain.serviciosdama.valor.Nombre;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -13,7 +14,7 @@ public class Manicurista extends Entity<IdManicurista> {
     private IdManicurista idManicurista;
     private DiseñoUñas diseñoUñas;
     private Nombre nombre;
-    private List<Esmalte> esmaltes;
+    private List<Esmalte> esmaltes = new ArrayList<>();
 
     public Manicurista(IdManicurista idManicurista, DiseñoUñas diseñoUñas, Nombre nombre) {
         super(idManicurista);
