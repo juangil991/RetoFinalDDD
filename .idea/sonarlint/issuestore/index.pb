@@ -69,5 +69,3 @@ csrc/test/java/co/com/sofka/usecases/servicioscaballero/ActualizarExperienciaBar
 csrc/test/java/co/com/sofka/usecases/servicioscaballero/ActualizarTipoDeDiseñoBarbaUseCaseTest.java,6\a\6ae1fc10dfbf325a23f19f7e0dba81e4d8cf5c17
 �
 Zsrc/test/java/co/com/sofka/usecases/servicioscaballero/AgregarDiseñoBarbaUseCaseTest.java,4\6\46fa746a185b783ab160e006574f68f899ee4d9f
-
-Osrc/main/java/co/com/sofka/domain/servicioscaballero/valor/FechaDeServicio.java,4\9\4901ace737f3930d4e05dfa160d807a37c45619c
