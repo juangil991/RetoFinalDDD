@@ -20,14 +20,14 @@ public class Nombre implements ValueObject<Nombre.Props> {
             }
 
             @Override
-            public String Apellido() {
-                return nombre;
+            public String apellido() {
+                return apellido;
             }
         };
     }
 
     public interface Props{
         String Nombre();
-        String Apellido();
+        String apellido();
     }
 }

@@ -9,7 +9,7 @@ public class GeneroClienteActualizado extends DomainEvent {
     private final Genero genero;
 
     public GeneroClienteActualizado( IdCliente idCliente, Genero genero) {
-        super("co.com.sofka.domain.serviciosdama.alisadoestilistaagregado");
+        super("co.com.sofka.domain.serviciosdama.generoclienteactualizado");
         this.idCliente = idCliente;
         this.genero = genero;
     }

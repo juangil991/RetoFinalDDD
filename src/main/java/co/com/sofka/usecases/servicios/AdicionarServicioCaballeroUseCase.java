@@ -6,7 +6,7 @@ import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.domain.servicios.Servicios;
 import co.com.sofka.domain.servicios.command.AdicionarServicioCaballero;
 
-public class AgregarServicioCaballeroUseCase
+public class AdicionarServicioCaballeroUseCase
         extends UseCase<RequestCommand<AdicionarServicioCaballero>, ResponseEvents> {
     @Override
     public void executeUseCase(RequestCommand<AdicionarServicioCaballero> input) {
