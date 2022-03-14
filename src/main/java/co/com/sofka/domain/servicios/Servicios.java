@@ -1,6 +1,7 @@
 package co.com.sofka.domain.servicios;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.domain.servicios.event.*;
 import co.com.sofka.domain.servicios.valor.*;
 
@@ -21,6 +22,11 @@ public class Servicios extends AggregateEvent<IdServicios> {
     private Servicios(IdServicios idServicios){
         super(idServicios);
         subscribe(new ServiciosChange(this));
+    }
+    public static Servicios from(IdServicios idServicios, List<DomainEvent>events){
+        var servicios=new Servicios(idServicios);
+        events.forEach(servicios::applyEvent);
+        return servicios;
     }
 
     public void AdicionarServiciosCaballero(IdServiciosCaballero idServiciosCaballero){

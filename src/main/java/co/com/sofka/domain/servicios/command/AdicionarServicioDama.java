@@ -4,11 +4,11 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofka.domain.servicios.valor.IdServicios;
 import co.com.sofka.domain.servicios.valor.IdServiciosDama;
 
-public class AgregarServicioDama extends Command {
+public class AdicionarServicioDama extends Command {
     private final IdServicios idServicios;
     private final IdServiciosDama idServiciosDama;
 
-    public AgregarServicioDama(IdServicios idServicios, IdServiciosDama idServiciosDama) {
+    public AdicionarServicioDama(IdServicios idServicios, IdServiciosDama idServiciosDama) {
         this.idServicios = idServicios;
         this.idServiciosDama = idServiciosDama;
     }
