@@ -23,8 +23,6 @@ Xsrc/main/java/co/com/sofka/domain/servicioscaballero/event/ServiciosCaballeroCr
 Tsrc/main/java/co/com/sofka/domain/servicioscaballero/valor/IdServiciosCaballero.java,d\6\d69d41a60674d5d244e0f28a92dcd476b7f2be97
 ‡
 Wsrc/main/java/co/com/sofka/domain/servicioscaballero/command/AgregarCorteCaballero.java,e\b\ebefe38cd8e5a59e6a80b5a83dfc8b17a9f76bd7
-•
-esrc/main/java/co/com/sofka/domain/servicioscaballero/command/ActualizarComplejidadCorteCaballero.java,7\e\7ee895c3f47913f6f059ffeebd81a7628a9f5838
 ”
 dsrc/main/java/co/com/sofka/domain/servicioscaballero/event/ComplejidadCorteCaballeroActualizada.java,d\c\dc308bb7639b38c617664345bee063edad2eba5b
 †
